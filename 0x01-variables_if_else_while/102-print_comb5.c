@@ -25,7 +25,7 @@ int main(void)
 						putchar(j + '0');
 						sum1 = h * 10 + k;
 						sum2 = i * 10 + j;
-						(sum1 < 99 && sum2 < 100) ? putchar(','), putchar(' ') : 0;
+						(sum1 < 98 || sum2 < 99) ? putchar(','), putchar(' ') : 0;
 					}
 
 				}
