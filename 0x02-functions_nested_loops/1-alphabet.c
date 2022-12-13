@@ -1,5 +1,4 @@
 #include "main.h"
-void _putchar(char c);
 /**
  *print_alphabet -print the alphabet in lowercase
 */
