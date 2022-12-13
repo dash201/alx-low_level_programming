@@ -1,6 +1,7 @@
 #ifndef MAIN_H
 #define MAIN_H
 
+void jack_bauer(void);
 int _abs(int);
 int _islower(int c);
 int print_last_digit(int);
