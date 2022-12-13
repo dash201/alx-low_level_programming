@@ -4,9 +4,9 @@
 */
 void print_alphabet(void)
 {
-	char c = 'a';
+	char c = 97;
 
-	while (c != 'z')
+	while (c <= 122 )
 	{
 		_putchar(c);
 		c++;
