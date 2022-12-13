@@ -1,5 +1,6 @@
-#include "main.h>
+#include "main.h"
 
+void _putchar(char c);
 /**
 *main -enter program
 *Return: 0
