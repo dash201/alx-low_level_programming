@@ -3,6 +3,7 @@
 
 int _abs(int);
 int _islower(int c);
+int print_last_digit(int);
 int _isalpha(int c);
 int print_sign(int n);
 void _putchar(char c);
