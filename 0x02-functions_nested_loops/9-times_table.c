@@ -49,7 +49,7 @@ void times_table(void)
 			}
 			else
 			{
-				_putchar0(((i * j) / 10) + '0');
+				_putchar(((i * j) / 10) + '0');
 			}
 			_putnb(i * j);
 		}
