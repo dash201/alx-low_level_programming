@@ -1,5 +1,5 @@
 #include "main.h"
-void length_nb(int n);
+int length_nb(int n);
 void _putnd(int n);
 /**
  *length_nb - give the length of a number
@@ -36,9 +36,11 @@ void _putnb(int n)
 */
 void jack_bauer(void)
 {
-	for (int h = 0; h <= 23; h++)
+	int h, m;
+
+	for (h = 0; h <= 23; h++)
 	{
-		for (int m = 0; m <= 59; m++)
+		for (m = 0; m <= 59; m++)
 		{
 			_putnb(h);
 			_puchar(':');
