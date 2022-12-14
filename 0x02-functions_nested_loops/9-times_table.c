@@ -1,9 +1,9 @@
 #include "main.h"
 /**
- *_putnbr - print the number
+ *_putnb - print the number
  *@bn: the number
 */
-void _putnbr(int nb)
+void _putnb(int nb)
 {
 	char n;
 	int a = 1;
@@ -17,7 +17,7 @@ void _putnbr(int nb)
 	}
 	else
 	{
-		my_put_nbr(nb / 10);
+		_putnb(nb / 10);
 		n = (nb % 10) + 48;
 		_putchar(n);
 	}
