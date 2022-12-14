@@ -1,27 +1,58 @@
 #include "main.h"
-
 /**
- * print_times_table - prints the 9 times table, starting with 0.
- * @n: times table
- */
-void print_times_table(int n)
+ *_putnb - print the number
+ *@nb: the number
+*/
+void _putnb(int nb)
 {
-	int num, mult, prod;
+	char n;
+	int a = 1;
 
-	for (num = 0; num <= n; num++)
+	if (nb < 0)
 	{
-		_putchar('0');
-		for (mult = 1; mult <= n; mult++)
+		a = -1;
+		nb = nb * -1;
+	}
+	if (a == -1)
+	{
+		_putchar('-');
+	}
+	if (nb >= 0 && nb < 10)
+	{
+		n = nb + 48;
+		_putchar(n);
+	}
+	else
+	{
+		_putnb(nb / 10);
+		n = (nb % 10) + 48;
+		_putchar(n);
+	}
+}
+/**
+ *times_table - prints the 9 times table, starting with 0.
+*/
+void times_table(int n)
+{
+	int i, j;
+
+	if (n <= 15)
+	{
+		for (i = 0; i < n; i++)
 		{
-			_putchar(',');
-			_putchar(' ');
-			prod = num * mult;
-			if (prod <= n)
+			_putchar('0');
+			for (j = 1; j < n; j++)
+			{
+				_putchar(',');
 				_putchar(' ');
-			else
-				_putchar((prod / 10) + '0');
-			_putchar((prod % 10) + '0');
+				_putchar(' ');
+				if (i * j <= 9)
+				{
+					_putchar(' ');
+				}
+				_putnb(i * j);
+			}
+			_putchar('\n');
 		}
-		_putchar('\n');
 	}
 }
