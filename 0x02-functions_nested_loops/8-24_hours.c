@@ -43,7 +43,7 @@ void jack_bauer(void)
 		for (m = 0; m <= 59; m++)
 		{
 			_putnb(h);
-			_puchar(':');
+			_putchar(':');
 			_putnb(m);
 			_puchar('\n');
 		}
