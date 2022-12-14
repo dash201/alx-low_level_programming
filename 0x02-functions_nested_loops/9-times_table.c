@@ -47,10 +47,6 @@ void times_table(void)
 			{
 				_putchar(' ');
 			}
-			else
-			{
-				_putchar(((i * j) / 10) + '0');
-			}
 			_putnb(i * j);
 		}
 		_putchar('\n');
