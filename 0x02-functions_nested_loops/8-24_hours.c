@@ -1,76 +1,28 @@
 #include "main.h"
 int length_nb(int n);
-void _putnd(int n);
-/**
- *length_nb - give the length of a number
- *@n: the number
- *Return: The length of number
-*/
-int length_nb(int n)
-{
-	int value = 1;
-
-	while (n / 10 != 0)
-	{
-		value = value * 10;
-	}
-	return (value);
-}
-/**
- *_putnb - print the number
- *@n: the number in parameter
-*/
-void _putnb(int n)
-{
-	int len = length_nb(n);
-
-	while (len != 0)
-	{
-		_putchar(n / len + '0');
-		n = n % len;
-		len = len / 10;
-	}
-}
 /**
  *jack_bauer - prints every minute of the day
 */
 void jack_bauer(void)
 {
-	int h, m;
+	int a, b, i, j;
 
-	for (h = 0; h <= 23; h++)
+	for(a = 0; a <= 2; a++)
 	{
-		for (m = 0; m <= 59; m++)
+		for(b = 0; b <= 9 ; b++)
 		{
-			if (h < 10 && m < 10)
-			{
-				_putchar('0');
-				_putnb(h);
-				_putchar(':');
-				_putchar('0');
-				_putnb(m);
-			}
-			else if (h < 10 && m >= 10)
-			{
-				_putchar('0');
-				_putnb(h);
-				_putchar(':');
-				_putnb(m);
-			}
-			else if (h >= 10 && m < 10)
-			{
-				_putnb(h);
-				_putchar(':');
-				_putchar('0');
-				_putnb(m);
-			}
-			else
-			{
-				_putnb(h);
-				_putchar(':');
-				_putnb(m);
-			}
-			_putchar('\n');
-		}
+	    	for(i = 0; i <= 5; i++)
+	    	{
+            	for(j = 0; j <= 9; j++)
+            	{
+                	if (((a * 10) + b) <= 23 && ((i * 10) + j) < 60)
+                        _putchar(a + '0');
+                        _putchar(b + '0');
+                        _putchar(i + '0');
+                        _putchar(j + '0');
+                        _putchar('\n');
+                }
+            }
+    	}
 	}
 }
