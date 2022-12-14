@@ -9,7 +9,7 @@ void _putnbr(int nb)
 	int a = 1;
 
 	(nb < 0) ? a = -1, nb = nb * -1 : 0;
-	a == -1 ? _putchar("-") : 0;
+	a == -1 ? _putchar('-') : 0;
 	if (nb >= 0 && nb < 10)
 	{
 		n = nb + 48;
