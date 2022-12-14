@@ -8,7 +8,7 @@ void _putnd(int n);
 */
 int length_nb(int n)
 {
-	int value =1;
+	int value = 1;
 
 	while (n / 10 != 0)
 	{
@@ -42,8 +42,12 @@ void jack_bauer(void)
 	{
 		for (m = 0; m <= 59; m++)
 		{
+			if (h < 10)
+				_putchar('0');
 			_putnb(h);
 			_putchar(':');
+			if (m < 10)
+				_putchar('0');
 			_putnb(m);
 			_putchar('\n');
 		}
