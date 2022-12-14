@@ -37,5 +37,5 @@ void _putnb(int nb)
 */
 int add(int a, int b)
 {
-	return _putnb(a + b);
+	return (a + b);
 }
