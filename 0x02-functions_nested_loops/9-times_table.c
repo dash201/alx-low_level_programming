@@ -1,7 +1,7 @@
 #include "main.h"
 /**
  *_putnb - print the number
- *@bn: the number
+ *@nb: the number
 */
 void _putnb(int nb)
 {
@@ -41,8 +41,11 @@ void times_table(void)
 		for (j = 0; j < 10; j++)
 		{
 			_putnb(i * j);
-			_putchar(',');
-			_putchar(' ');
+			if (i != 9 && j != 9)
+			{
+				_putchar(',');
+				_putchar(' ');
+			}
 		}
 		_putchar('\n');
 	}
