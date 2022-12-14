@@ -50,6 +50,20 @@ void jack_bauer(void)
 				_putchar('0');
 				_putnb(m);
 			}
+			else if (h < 10 && m > 10)
+			{
+				_putchar('0');
+				_putnb(h);
+				_putchar(':');
+				_putnb(m);
+			}
+			else if (h > 10 && m < 10)
+			{
+				_putnb(h);
+				_putchar(':');
+				_putchar('0');
+				_putnb(m);
+			}
 			else
 			{
 				_putnb(h);
