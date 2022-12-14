@@ -1,6 +1,7 @@
 #ifndef MAIN_H
 #define MAIN_H
 
+void times_table(void);
 void jack_bauer(void);
 int _abs(int);
 int _islower(int c);
