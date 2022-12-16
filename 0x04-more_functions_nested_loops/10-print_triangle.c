@@ -16,7 +16,7 @@ void print_triangle(int size)
 			{
 				if (j < i)
 				{
-					_putchar('.');
+					_putchar(' ');
 				}
 				else
 				{
