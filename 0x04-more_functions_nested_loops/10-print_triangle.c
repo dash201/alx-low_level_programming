@@ -16,11 +16,11 @@ void print_triangle(int size)
 			{
 				if ((size - j) > i)
 				{
-					_putchar(' ');
+					_putchar('#');
 				}
 				else
 				{
-					_putchar('#');
+					_putchar(' ');
 				}
 			}
 			_putchar('\n');
