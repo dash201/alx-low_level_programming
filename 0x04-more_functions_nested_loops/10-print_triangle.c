@@ -1,7 +1,9 @@
 #include "main.h"
 
 /**
- *print_triangle - draw a triangle*/
+ *print_triangle - draw a triangle
+ *@size: parameter
+*/
 void print_triangle(int size)
 {
 	int i, j;
