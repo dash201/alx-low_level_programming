@@ -1,6 +1,7 @@
 #ifndef MAIN_H
 #define MAIN_H
 
+void print_diagonal(int n);
 int mul(int a, int b);
 void print_line(int n);
 void more_numbers(void);
