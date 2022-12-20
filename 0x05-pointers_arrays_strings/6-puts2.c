@@ -20,7 +20,6 @@ int _strlen(char *s)
 void puts2(char *str)
 {
 	int a = 0;
-	int len = _strlen(&(*str));
 
 	while (str[a] != '\0')
 	{
