@@ -9,6 +9,8 @@ void puts2(char *str)
 
 	while (str[a] != '\0')
 	{
+		if (str[a - 1] == '\0' || str[a + 1])
+			break;
 		_putchar(str[a]);
 		a = a + 2;
 	}
