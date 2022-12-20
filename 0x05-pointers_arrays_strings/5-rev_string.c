@@ -24,7 +24,7 @@ void rev_string(char *s)
 	char c;
 	int i, a;
 
-	for (i = 0,  a= n; i<a; i++, n--)
+	for (i = 0,  a = n; i < a; i++, n--)
 	{
 		c = s[i];
 		s[i] = s[a];
