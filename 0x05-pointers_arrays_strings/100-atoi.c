@@ -13,7 +13,7 @@ int _atoi(char *str)
 	while ((str[a] >= '0') && (str[a] <= '9'))
 	{
 		n = (n * 10) + (str[a] - 48);
-		if (!(n < 0 || n > 2147483647 && i != -1))
+		if (!((n < 0 || n > 2147483647) && i != -1))
 			nb = n;
 		else
 			return (0);
