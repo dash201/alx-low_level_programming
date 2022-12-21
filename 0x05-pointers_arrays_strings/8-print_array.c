@@ -28,9 +28,9 @@ void print_array(int *a, int n)
 		for (i = 0; i < _size(&(*a)); i++)
 		{
 			if (i == _size(&(*a)) - 1)
-				printf("%d\n", *a[i]);
+				printf("%d\n", a[i]);
 			else
-				printf("%d, ", *a[i]);
+				printf("%d, ", a[i]);
 		}
 	}
 }
