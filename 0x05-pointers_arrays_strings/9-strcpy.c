@@ -5,7 +5,7 @@
  *@src: second parameter
  *Return: value pointer to dest
 */
-char *_strcpy(char *dest, char const *src)
+char *_strcpy(char *dest, char *src)
 {
 	int a = 0;
 	int x = 0;
