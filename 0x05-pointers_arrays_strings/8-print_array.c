@@ -23,7 +23,7 @@ void print_array(int *a, int n)
 {
 	int i;
 
-	if (n <= _size(&(*a)))
+	if (n <= _size(&(*a)) && n > 0)
 	{
 		for (i = 0; i < n; i++)
 		{
