@@ -23,11 +23,11 @@ void print_array(int *a, int n)
 {
 	int i;
 
-	if (n < _size(&(*a)))
+	if (n <= _size(&(*a)))
 	{
-		for (i = 0; i < _size(&(*a)); i++)
+		for (i = 0; i < n; i++)
 		{
-			if (i == _size(&(*a)) - 1)
+			if (i == n - 1)
 				printf("%d\n", a[i]);
 			else
 				printf("%d, ", a[i]);
