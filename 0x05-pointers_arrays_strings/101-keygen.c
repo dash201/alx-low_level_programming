@@ -24,8 +24,6 @@ char *create_password(void)
 
 int main(void)
 {
-    char dest[10];
-    int sp[] = {1, 4, 6, 3, 7, 9, 0, 13, 56, 23, 78};
     printf("%s\n", create_password());
     return 0;
 }
