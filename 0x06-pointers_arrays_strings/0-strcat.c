@@ -21,11 +21,12 @@ int _strlen(char *s)
 */
 char *_strcat(char *dest, char *src)
 {
-	int len = _strlen(&dest);
+	int len = _strlen(&(*dest));
 
 	for (int i = 0; i < len && scr[i] != '\0'; i++)
 	{
 		dest[len + i] = src[i];
 	}
+	dest[len + i] = '\0';
 	return (dest);
 }
