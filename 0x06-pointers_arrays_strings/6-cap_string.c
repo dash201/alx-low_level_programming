@@ -13,18 +13,18 @@ char *cap_string(char *str)
 	{
 		((str[a] >= 'a' && str[a] <= 'z')
 		 && ((str[a - 1] == ' ') ||
-		     str[index - 1] == '\t' ||
-		     str[index - 1] == '\n' ||
-		     str[index - 1] == ',' ||
-		     str[index - 1] == ';' ||
-		     str[index - 1] == '.' ||
-		     str[index - 1] == '!' ||
-		     str[index - 1] == '?' ||
-		     str[index - 1] == '"' ||
-		     str[index - 1] == '(' ||
-		     str[index - 1] == ')' ||
-		     str[index - 1] == '{' ||
-		     str[index - 1] == '}' ||))
+		     str[a - 1] == '\t' ||
+		     str[a - 1] == '\n' ||
+		     str[a - 1] == ',' ||
+		     str[a - 1] == ';' ||
+		     str[a - 1] == '.' ||
+		     str[a - 1] == '!' ||
+		     str[a - 1] == '?' ||
+		     str[a - 1] == '"' ||
+		     str[a - 1] == '(' ||
+		     str[a - 1] == ')' ||
+		     str[a - 1] == '{' ||
+		     str[a - 1] == '}' ||))
 			? str[a] = str[a] - 32 : 0;
 	}
 	return (str);
