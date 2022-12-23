@@ -11,9 +11,9 @@ char *cap_string(char *str)
 	(str[a] >= 'a' && str[a] <= 'z') ? str[a] = str[a] - 32 : 0;
 	for (a = 1; str[a] != '\0'; a++)
 	{
-		((str[a + 1] >= 'a' && str[a + 1] <= 'z')
-		 && (str[a] == ' '))
-			? str[a + 1] = str[a + 1] - 32 : 0;
+		((str[a] >= 'a' && str[a] <= 'z')
+		 && (str[a - 1] == ' '))
+			? str[a] = str[a] - 32 : 0;
 	}
 	return (str);
 }
