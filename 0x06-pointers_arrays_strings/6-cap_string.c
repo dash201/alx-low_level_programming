@@ -18,7 +18,8 @@ char *cap_string(char *str)
 		 || str[a - 1] == '?' || str[a - 1] == '"'
 		 || str[a - 1] == '(' || str[a - 1] == ')'
 		 || str[ - 1] == '{' || str[a - 1] == '}'
-		 || str[a - 1] == '.')
+		 || str[a - 1] == '.'
+		 && (str[a] >= 'a' && str[a] <= 'z'))
 			? str[a] = str[a] - 32 : str[a] = str[a];
 	}
 	return (str);
