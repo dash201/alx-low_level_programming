@@ -20,6 +20,8 @@ int _strlen(char *s)
 */
 int equal_case(char *s1, char *s2)
 {
+	int n = 0;
+
 	for (int i = 0; s1[i] != '\0'; i++)
 	{
 		if (s1[i] > s2[i])
@@ -42,11 +44,12 @@ int _strcmp(char *s1, char *s2)
 	int n2 = _strlen(s2);
 
 	if (n1 > n2)
-		return (15);
+		n = 15;
 	else if (n1 < n2)
-		return (-15);
+		n = -15;
 	else
 	{
-		equal_case(s1, s2);
+		n = equal_case(s1, s2);
 	}
+	return (n);
 }
