@@ -20,9 +20,9 @@ int _strlen(char *s)
 */
 int equal_case(char *s1, char *s2)
 {
-	int n = 0;
+	int i;
 
-	for (int i = 0; s1[i] != '\0'; i++)
+	for (i = 0; s1[i] != '\0'; i++)
 	{
 		if (s1[i] > s2[i])
 			return (15);
