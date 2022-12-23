@@ -1,34 +1,27 @@
+
 #include "main.h"
-/**
- *_strlen -  returns the length of a string
- *@s: parameter
- *Return: length of a string
-*/
-int _strlen(char *s)
-{
-	int i;
 
-	for (i = 0; s[i] != '\0'; i++)
-		;
-
-	return (i);
-}
 /**
- *_strcat - concatenates two strings.
- *@dest: first parameter
- *@src: second parameter
- *Return: char pointer
-*/
+ * _strcat - concat 2 string
+ * @dest:char
+ * @src:char
+ * Return:char
+ */
 char *_strcat(char *dest, char *src)
 {
-	char s = dest;
-	int i;
-	int len = _strlen(&(*dest));
+	char *s = dest;
 
-	for (i = 0; i < len && scr[i] != '\0'; i++)
+	while (*dest != '\0')
 	{
-		dest[len + i] = src[i];
+		dest++;
 	}
-	dest[len + i] = '\0';
+
+	while (*src != '\0')
+	{
+		*dest = *src;
+		dest++;
+		src++;
+	}
+	*dest = '\0';
 	return (s);
 }
