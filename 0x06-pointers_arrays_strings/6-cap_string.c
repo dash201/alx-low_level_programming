@@ -13,7 +13,7 @@ char *cap_string(char *str)
 	{
 		((str[a] >= 'a' && str[a] <= 'z')
 		 && ((str[a - 1] == ' ') ||
-		     ( str[a - 1] == '\t') ||
+		     (str[a - 1] == '\t') ||
 		     (str[a - 1] == '\n') ||
 		     (str[a - 1] == ',') ||
 		     (str[a - 1] == ';') ||
