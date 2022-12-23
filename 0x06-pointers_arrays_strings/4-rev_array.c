@@ -6,9 +6,8 @@
 */
 void reverse_array(int *a, int n)
 {
-	int tp = 0;
+	int i, j, tp;
 
-	for (int a = 0, b = (n - 1); a < (n - 1) || b > 0; a++, b--)
-		(a < b) ? tp = str[a], str[a] = str[b], str[b] = tp : 0;
-	return (str);
+	for (i = 0, j = (n - 1); i < j; i++, i--)
+		(i < j) ? tp = a[i], a[i] = a[j], a[j] = tp : 0;
 }
