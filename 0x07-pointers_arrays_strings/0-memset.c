@@ -27,13 +27,16 @@ char *_memset(char *s, char b, unsigned int n)
 	char *cp = s;
 	unsigned int i = 0;
 
-	for (i = 0; i < n; i++)
+	if (len - n > 0 && n != 0)
 	{
-		s[i] = b;
+		for (i = 0; i < n; i++)
+		{
+			s[i] = b;
+		}
+		for (; i < len; i++)
+		{
+			s[i] = *cp;
+		}
+		return (s);
 	}
-	for (; i < len; i++)
-	{
-		s[i] = *cp;
-	}
-	return (s);
 }
