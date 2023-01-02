@@ -24,7 +24,7 @@ char *_memset(char *s, char b, unsigned int n)
 {
 	int len = _strlen(s);
 	int result = len - n;
-	char *cp = *s;
+	char *cp = s;
 	int i = 0;
 
 	for (i = 0; i < n; i++)
