@@ -23,20 +23,13 @@ int _strlen(char *s)
 */
 char *_memset(char *s, char b, unsigned int n)
 {
-	unsigned int len = _strlen(s);
 	char *cp = s;
 	unsigned int i = 0;
 
-	if (len - n >= 0)
+       	for (i = 0; i < n; i++)
 	{
-		for (i = 0; i < n; i++)
-		{
-			s[i] = b;
-		}
-		for (; i < len; i++)
-		{
-			s[i] = *cp;
-		}
-	}
+		s[i] = b;
+       	}
+
 	return (s);
 }
