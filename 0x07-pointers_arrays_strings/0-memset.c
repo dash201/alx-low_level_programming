@@ -1,4 +1,5 @@
 #include "main.h"
+
 /**
  *_strlen -  returns the length of a string
  *@s: parameter
@@ -22,10 +23,9 @@ int _strlen(char *s)
 */
 char *_memset(char *s, char b, unsigned int n)
 {
-	int len = _strlen(s);
-	int result = len - n;
+	unsigned int len = _strlen(s);
 	char *cp = s;
-	int i = 0;
+	unsigned int i = 0;
 
 	for (i = 0; i < n; i++)
 	{
