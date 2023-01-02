@@ -23,15 +23,15 @@ int _strlen(char *s)
 char *_strchr(char *s, char c)
 {
 	int len = _strlen(s);
-	int i, j;
+	int i;
 	char *k = "";
 
 	for (i = 0; i < len; i++)
 	{
 		if (s[i] == c)
 		{
-			for (j = 0, i = i; i < len; i++, j++)
-				*(k + j) = s[i];
+			/*for (j = 0, i = i; i < len; i++, j++)*/
+				k = s[i];
 			break;
 		}
 		else if (!(s[i] == c))
