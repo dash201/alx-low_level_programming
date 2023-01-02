@@ -31,7 +31,7 @@ char *_strchr(char *s, char c)
 		if (s[i] == c)
 		{
 			/*for (j = 0, i = i; i < len; i++, j++)*/
-				k = s[i];
+			k = s[i];
 			break;
 		}
 		else if (!(s[i] == c))
