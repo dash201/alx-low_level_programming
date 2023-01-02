@@ -27,7 +27,7 @@ char *_memset(char *s, char b, unsigned int n)
 	char *cp = s;
 	unsigned int i = 0;
 
-	if (len - n > 0 && n != 0)
+	if (len > n)
 	{
 		for (i = 0; i < n; i++)
 		{
@@ -37,6 +37,6 @@ char *_memset(char *s, char b, unsigned int n)
 		{
 			s[i] = *cp;
 		}
-		return (s);
 	}
+	return (s);
 }
