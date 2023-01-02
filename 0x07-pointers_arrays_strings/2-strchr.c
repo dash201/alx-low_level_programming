@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stddef.h>
 /**
  *_strlen -  returns the length of a string
  *@s: parameter
@@ -33,6 +34,8 @@ char *_strchr(char *s, char c)
 				*(k + j) = s[i];
 			break;
 		}
+		else if (!(s[i] == c))
+			k = '\0';
 	}
 	return (k);
 }
