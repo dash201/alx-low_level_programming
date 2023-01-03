@@ -23,7 +23,7 @@ char *_strstr(char *haystack, char *needle)
 {
 	int i = 0;
 
-	if ( *needle == 0)
+	if (*needle == 0)
 		return (haystack);
 	while (*haystack)
 	{
@@ -31,7 +31,7 @@ char *_strstr(char *haystack, char *needle)
 		{
 			while (haystack[i] == needle[i])
 			{
-				if ( i == _strlen(needle))
+				if (i == _strlen(needle))
 					return (haystack);
 				i++;
 			}
