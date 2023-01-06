@@ -1,6 +1,4 @@
 #include <stdio.h>
-#include <stdlib.h>
-
 /**
  *main - entry program
  *@argc: first parameter
