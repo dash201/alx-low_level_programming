@@ -7,6 +7,6 @@
 */
 int main(int __attribute__((__unused__)) argc, char *argv[])
 {
-	print("%d\n", argc);
+	print("%d\n", argc - 1);
 	return (0);
 }
