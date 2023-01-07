@@ -1,4 +1,4 @@
-#include <stdio.h>>>W
+#include <stdio.h>
 /**
  *main -entry program
  *@argc: first parameter
