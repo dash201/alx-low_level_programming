@@ -2,13 +2,14 @@
 #include <stddef.h>
 #include <stdlib.h>
 /**
- *ismember -  veriify the string
+ *isnumber - veriify the string
  *@str: parammeter
  *Return: 0 or 1
 */
-int isnumber(char * str)
+int isnumber(char *str)
 {
 	int a = 0;
+
 	if (str[0] == '-' || str[0] == '+')
 		a = 1;
 	for (a = 0; str[a] != '\0'; a++)
@@ -26,22 +27,23 @@ int isnumber(char * str)
 */
 int main(int __attribute__((unused)) argc, char *argv[])
 {
-	int nb = 0; int a;
+	int nb = 0;
+	int a;
 
 	if (argc == 1)
-                printf("0\n");
+		printf("0\n");
 	else
 	{
 		for (a = 1; argv[a] != NULL; a++)
 		{
-			if (isnumber (argv[a]) == 1)
+			if (isnumber(argv[a]) == 1)
 			{
-				printf ("Error\n");
+				printf("Error\n");
 				return (1);
 			}
-			nb = nb + atoi (argv[a]);
+			nb = nb + atoi(argv[a]);
 		}
-		printf ("%d\n", nb);
+		printf("%d\n", nb);
 	}
 	return (0);
 }
