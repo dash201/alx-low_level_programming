@@ -5,7 +5,7 @@
  *@argv: second parameter
  *Return: 0
 */
-int main(int __attribute__((unused)) argc, char *argv)
+int main(int __attribute__((unused)) argc, char *argv[])
 {
 	int r;
 
