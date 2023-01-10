@@ -16,7 +16,7 @@ int _strlen(char *s)
 	return (i);
 }
 /**
- *str_concat(char *s1, char *s2) - concatenates two strings.
+ *str_concat - concatenates two strings.
  *@s1: first character
  *@s2: second character
  *Return: char point or NULL
@@ -29,13 +29,13 @@ char *str_concat(char *s1, char *s2)
 	int i;
 	int j;
 
-	if (!s1)
+	if (!s1 || s1 == NULL)
 		s1 = " ";
-	if (!s2)
+	if (!s2 || s2 == NULL)
 		s2 = " ";
 	l1 = _strlen(s1);
 	l2 = _strlen(s2);
-	c = malloc(sizeof(char) + (l1 + l2 + 2));
+	c = malloc(sizeof(char) + (l1 + l2 - 1));
 	if (c == NULL)
 		return (NULL);
 	for (i = 0; s1[i] != '\0'; i++)
