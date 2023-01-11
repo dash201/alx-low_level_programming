@@ -26,7 +26,7 @@ int **alloc_grid(int width, int height)
 	}
 	ptr = (int *)(arr + width);
 	for (i = 0; i < width; i++)
-		arr[i] = (ptr + height * i);
+		arr[i] = (ptr * height * i);
 	if (arr == NULL)
 	{
 		for (i = 0; i < width; i++)
