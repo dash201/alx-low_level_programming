@@ -13,7 +13,7 @@ void *malloc_checked(unsigned int b)
 	int m = 98;
 
 	ptr = &m;
-	n = malloc(sizeof(int) * b);
+	n = malloc(b);
 	if (n == NULL)
 		return (ptr);
 	return (n);
