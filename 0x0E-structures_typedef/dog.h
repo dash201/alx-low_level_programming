@@ -16,4 +16,9 @@ struct dog
 	float age;
 };
 
+/**
+ *dog_t - New type dog_t as new name for the type struct dog
+*/
+typedef struct dog dog_t;
+
 #endif
