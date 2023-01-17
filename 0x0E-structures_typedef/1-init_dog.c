@@ -9,11 +9,11 @@
 */
 void init_dog(struct dog *d, char *name, float age, char *owner)
 {
-	struct dog *ddog;
+	struct dog *m;
 
-	ddog = malloc(sizeof(d));
-	ddog = d;
-	ddog->name = name;
-	ddog->owner = owner;
-	ddog->age = age;
+	m = malloc(sizeof(struct dog));
+	m = d;
+	m->name = name;
+	m->owner = owner;
+	m->age = age;
 }
