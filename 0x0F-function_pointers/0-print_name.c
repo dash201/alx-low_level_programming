@@ -1,5 +1,6 @@
 #include "function_pointers.h"
 #include <stddef.h>
+
 /**
  *fprint - function used to print
  *@c: parameter
@@ -18,6 +19,5 @@ void fprint(char *c)
 */
 void print_name(char *name, void (*f)(char *))
 {
-	f = &fprint;
 	(*f)(name);
 }
