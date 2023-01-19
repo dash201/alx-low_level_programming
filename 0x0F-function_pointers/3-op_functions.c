@@ -20,7 +20,7 @@ int op_sub(int a, int b)
 	return (a - b);
 }
 /**
- *op_mul - multiply two number
+ *op_mul - multiply two numbers
  *@a: first parameter
  *@b: second parameter
  *Return: the product of a and b
@@ -30,7 +30,7 @@ int op_mul(int a, int b)
 	return (a * b);
 }
 /**
- *op_div - divide two number
+ *op_div - divide two numbers
  *@a: first parameter
  *@b: second parameter
  *Return: the result of the division of a by b
