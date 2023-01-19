@@ -2,10 +2,10 @@
 #include <stddef.h>
 
 /**
- *fprint - function used to print
+ *print - function used to print
  *@c: parameter
 */
-void fprint(char *c)
+void print(char *c)
 {
 	int i;
 
