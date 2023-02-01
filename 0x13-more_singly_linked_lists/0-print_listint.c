@@ -6,13 +6,13 @@
  *@h: linked list
  *Return: the number of nodes
 */
-size_t print_listint(const listint_t *h);
+size_t print_listint(const listint_t *h)
 {
 	int n = 0;
 	listint_t *ptr = NULL;
 
 	ptr = malloc(sizeof(listint_t));
-	ptr = h;
+	*ptr = *h;
 	while (ptr != h)
 	{
 		printf("%d\n", ptr->n);
