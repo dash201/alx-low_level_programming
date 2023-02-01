@@ -14,7 +14,7 @@ size_t print_listint(const listint_t *h)
 
 	ptr = malloc(sizeof(listint_t));
 	*ptr = *h;
-	while (ptr != h)
+	while (ptr != NULL)
 	{
 		printf("%d\n", ptr->n);
 		n++;
