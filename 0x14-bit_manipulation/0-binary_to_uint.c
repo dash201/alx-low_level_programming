@@ -36,14 +36,16 @@ unsigned int n_factor(int len, int pos)
 */
 unsigned int binary_to_uint(const char *b)
 {
-	int i  = 0;
+	int i = 0;
 	int n = 0;
 	unsigned int nb = 0;
 
+	if (b == NULL)
+		return (0);
 	for (i = _strlen(b) - 1; i >= 0; i--)
 	{
-		if (b[i] < '0' || b[i] > '9')
-			return 0;
+		if (b[i] != '0' && b[i] != '1')
+			return (0);
 		n = b[i] - 48;
 		nb += (n * n_factor(_strlen(b), i));
 	}
