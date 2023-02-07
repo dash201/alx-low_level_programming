@@ -20,10 +20,10 @@ ssize_t read_textfile(const char *filename, size_t letters)
 
 	if (filename == NULL)
 		return (0);
-	file = open(filename, O_RDONLY | __O_LARGEFILE);
+	file = open(filename, O_RDONLY);
 	if (file < 0)
 		return (0);
-	c = malloc(sizeof(size_t) * letters);
+	c = malloc(sizeof(char) * letters);
 	r = read(file, c, letters);
 	if (r < 0)
 		return (0);
