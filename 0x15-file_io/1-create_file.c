@@ -39,6 +39,7 @@ int create_file(const char *filename, char *text_content)
 	if (file == 0)
 	{
 		w = write(file, text_content, _strlen(text_content));
+		close(file);
 		if (w < 0)
 			return (-1);
 		return (1);
@@ -48,6 +49,7 @@ int create_file(const char *filename, char *text_content)
 		return (-1);
 	file = open(filename, O_WRONLY);
 	w = write(file, text_content, _strlen(text_content));
+	close(file);
 	if (w < 0)
 		return (-1);
 	return (1);
