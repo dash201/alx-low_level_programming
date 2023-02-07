@@ -16,7 +16,7 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	int file;
 	ssize_t r;
 	char *c;
-	size_t i;
+	ssize_t i;
 
 	if (filename == NULL)
 		return (0);
@@ -27,7 +27,7 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	r = read(file, c, letters);
 	if (r < 0)
 		return (0);
-	for (i = 0; i < letters; i++)
+	for (i = 0; i < r; i++)
 	{
 		_putchar(c[i]);
 	}
