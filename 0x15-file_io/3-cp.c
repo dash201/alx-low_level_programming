@@ -19,7 +19,7 @@ int main(int __attribute__((__unused__)) argc, char *argv[])
 
 	if (argc != 3)
 	{
-		printf("Usage: cp file_from file_to\n");
+		dprintf(2, "Usage: cp file_from file_to\n");
 		exit(97);
 	}
 	rd = malloc(sizeof(char) * 1024);
