@@ -11,7 +11,7 @@
  *@argv: second parameter
  *Return: 0
 */
-int main(int __attribute__((__unused__)) argc, char *argv[])
+void main(int __attribute__((__unused__)) argc, char *argv[])
 {
 	int file_from, file_to, new_file;
 	ssize_t r, w;
@@ -48,5 +48,4 @@ int main(int __attribute__((__unused__)) argc, char *argv[])
 		dprintf(2, "Error: Can't close fd %d\n", file_from || file_to);
 		exit(100);
 	}
-	return (0);
 }
