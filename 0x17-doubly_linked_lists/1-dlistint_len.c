@@ -20,6 +20,7 @@ size_t dlistint_len(const dlistint_t *h)
 	while (ptr != NULL)
 	{
 		num++;
+		ptr = ptr->next;
 	}
 	free(ptr);
 	return (num);
