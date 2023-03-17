@@ -24,12 +24,12 @@ dlistint_t *get_dnodeint_at_index(dlistint_t *head, unsigned int index)
 	{
 		if (num == index)
 		{
-			ptr->prev = NULL;
-			ptr->next = NULL;
+			ptr->prev = head->prev;
+			ptr->next = head->next;
 			ptr->n = head->n;
 		}
 		num++;
-		ptr = ptr->next;
+		head = head->next;
 	}
 	return (ptr);
 }
