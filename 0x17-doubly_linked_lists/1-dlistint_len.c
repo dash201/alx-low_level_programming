@@ -11,11 +11,11 @@
 size_t dlistint_len(const dlistint_t *h)
 {
 	size_t num = 0;
-	dlistint_h *ptr = NULL;
+	dlistint_t *ptr = NULL;
 
 	if (h == NULL)
 		return (num);
-	ptr = malloc(sizeof(dlistint_h));
+	ptr = malloc(sizeof(dlistint_t));
 	*ptr = *h;
 	while (ptr != NULL)
 	{
